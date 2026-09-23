@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário - Exemplo 1</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color: #1436cca0;">
+   Cadastro de Alunos 
+</h1>
+    </header>
+    <main>
+        <!--Formulario de Cadastro-->
+        <form action="#" method="GET" style="background-color: #2e4485; padding: 20px; border-radius: 8px; width: 300px; margin: 0 auto; color: rgb(255, 255, 255);">
+            <label for="nome">
+                Nome do Aluno:
+            </label>
+            <input type="text" id="nome"
+            name="nome" required>
+            <br>
+            <br>
+            <!--Email do Aluno-->
+            <label for="">Email do Aluno:</label>
+            <input type="email" id="email"
+            name="email" required
+            >
+
+            <br>
+            <br>
+
+            <!--Campo telefone-->
+            <label for="telefone">Telefone do Aluno:</label>
+            <input type="tel" id="telefone"
+            name="telefone" required
+            >
+
+            <br>
+            <br>
+
+            <!--Campo data de nascimento-->
+            <label for="">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento"
+            name="dataNascimento" required>
+
+            <br><br>
+
+            <!--Idade Aluno-->
+            <label for="">Idade do Aluno:</label>
+            <input type="number" id="idade"
+            name="idade" required>
+
+            <br><br>
+
+            <!--Campo de escolha-->
+            <label for="">
+                Voce estuda para as provas?
+            </label>
+            <br> <br>
+            <label for="sim">Sim,estudo</label>
+            <input type="radio" value="Sim" id="Sim" name="sim">
+            <br> <br>
+            <label for="">Não Estudo</label>
+            <input type="radio" value="Não" id="não" name="pergunta">
+            <br><br>
+
+            <!--Campo range-->
+            <label for="">O qaunto voce gosta das aulas do SENAI</label>
+           <input type="range" id="processo" name="progresso">
+            <br><br>
+            <!--Input De COR-->
+            <label for="subit">Escolha sua cor favorita</label>
+            <input type="color" id="cor" name="cor">
+
+            <br><br>
+           
+            <label for="" >Selicione a sua sala</label>
+            <!--Campo de Seleção-->
+            <select name="opcao" id="opcao">
+                <!--Criando opções para selecionar-->
+                <option value="" selected disabled>Selecione...</option>
+                <option value="Sala Vermelha">Sala Vermelha</option>
+                <option value="Sala Azul">Sala Azul</option>
+                <option value="Sala Verde">Sala Verde</option>
+            </select>
+            <br><br>
+            <!--Campo de arquivo-->
+            <label for="">Envie uma foto</label>
+            <br>
+            <input type="file" id="file" name="file">
+             <br><br>
+            <!--Campo com textarea-->
+            <label for="submit">Observações</label>
+            <textarea name="observacoes" id="observacoes" rows="1">
+             
+            </textarea>
+
+            <br><br>
+            <!--Campo de checkbox-->
+            <input type="checkbox" id="termos" name="termos" value="termos">
+            <label for="termos">
+                Li e concordo com os termos 
+            </label>
+            <input type="checkbox" id="checkbox" id="receberEmail" name="recerberEmail" value="recerberEmail">
+            <label for="receberEmail">
+                Desejo recerber o e-mail de divugação
+            </label>
+            <br><br>
+            <input type="checkbox" id="recerberSMS" name="receberSMS" value="receberSMS">
+            <label for="recerberSMS">
+             Desejo receber SMS de divulgação 
+            </label>
+            
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+       </form>
+
+       
+    </main>
